@@ -1,0 +1,26 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8899,
+    "timeout": 5.0
+  },
+  "collect": {
+    "interval": 3,
+    "min_delta_bytes": 1,
+    "exclude_self": true,
+    "conn_snapshot_min_gap": 30,
+    "conn_snapshot_heartbeat": 900
+  },
+  "database": {
+    "file": "traffic_monitor.db",
+    "retention_days": 14
+  },
+  "quota": {
+    "alert_cooldown": 60,
+    "alert_action": "alert"
+  },
+  "log": {
+    "level": "INFO",
+    "dir": "logs"
+  }
+}
