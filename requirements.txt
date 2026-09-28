@@ -1,0 +1,6 @@
+# 后台采集服务与前台界面共用的依赖
+psutil>=5.9
+
+# 仅前台界面（client.py）需要
+PyQt5>=5.15
+matplotlib>=3.5
